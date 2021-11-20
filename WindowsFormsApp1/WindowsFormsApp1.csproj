@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8218132-4ED4-42F1-8E52-DBB9B5CE9B7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BMICalcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMICalcForm.Designer.cs">
+      <DependentUpon>BMICalcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMRCalcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMRCalcForm.Designer.cs">
+      <DependentUpon>BMRCalcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formdlin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formdlin.Designer.cs">
+      <DependentUpon>Formdlin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuth.Designer.cs">
+      <DependentUpon>FormAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCalculations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalculations.Designer.cs">
+      <DependentUpon>FormCalculations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfo.Designer.cs">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInteractiveMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInteractiveMap.Designer.cs">
+      <DependentUpon>FormInteractiveMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPattern.Designer.cs">
+      <DependentUpon>FormPattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReference.Designer.cs">
+      <DependentUpon>FormReference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistration.Designer.cs">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formdlin.resx">
+      <DependentUpon>Formdlin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuth.resx">
+      <DependentUpon>FormAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCalculations.resx">
+      <DependentUpon>FormCalculations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfo.resx">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPattern.resx">
+      <DependentUpon>FormPattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReference.resx">
+      <DependentUpon>FormReference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistration.resx">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-2016-full-colour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FemaleCrab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaleCrab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banco-banespa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brazil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ibirapuera-park-lake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marathon-image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teatro-municipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1-car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slug.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sloth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capybara.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaguar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pair-of-havaianas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airbus-a380.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football-field.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ronaldinho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-drinks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-energy-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-medical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-toilets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marathon-image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marathon-skills-2016-marathon-map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56ab451f325c51528d0601e6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fattest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_document_icon_143784.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblemsymboliclink_93507.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-circular-button_icon-icons.com_69969.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-icon-information1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
